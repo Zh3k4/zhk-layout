@@ -1,0 +1,27 @@
+default partial alphanumeric_keys modifier_keys keypad_keys
+xkb_symbols "zhk" {
+	include "us"
+	name[Group1] = "English (zhk)";
+
+	//             Unmodified       Shift       
+	// symbols row, left side
+	key <TLDE> { [ dollar,          asciitilde  ] };
+	key <AE01> { [ ampersand,       1           ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+	key <AE02> { [ bracketleft,     2           ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+	key <AE03> { [ braceleft,       3           ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+	key <AE04> { [ parenleft,       4           ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+	key <AE05> { [ plus,            5           ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+	key <AE06> { [ equal,           6           ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+	
+	// symbols row, right side
+	key <AE07> { [ parenright,      7           ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+	key <AE08> { [ braceright,      8           ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+	key <AE09> { [ bracketright,    9           ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+	key <AE10> { [ asterisk,        0           ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+	key <AE11> { [ exclam,          percent     ] };
+	key <AE12> { [ numbersign,      grave       ] };
+
+	// upper row, right side
+	key <AD11> { [ minus,           underscore  ] };
+	key <AD12> { [ at,              asciicircum ] };
+};
