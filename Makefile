@@ -1,8 +1,8 @@
 X11DIR = /usr/share/X11/xkb/symbols/
 KBDDIR = /usr/share/kbd/keymaps/
 
-X11MAP = /usr/share/X11/xkb/symbols/zhk
-KBDMAP = /usr/share/kbd/keymaps/zhk.map.gz
+X11MAP = $(X11DIR)/zhk
+KBDMAP = $(KBDDIR)/zhk.map.gz
 
 install:
 	install -g root -o root -m644 zhk-symbols $(X11MAP)
